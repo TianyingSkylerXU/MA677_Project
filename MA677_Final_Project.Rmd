@@ -12,6 +12,7 @@ pacman::p_load(pwr,tidyverse,fitdistrplus,boot,ggplot2,data.table)
 
 ### I. Statistics and Law: Is the data sufficient evidence of discrimination to warrant corrective action?
 H0: morgage refusal rate for white applicants is the same as that of minority applicants
+
 H1: morgage refusal rate for white applicants is lower than that of minority applicants
 ```{r}
 D1 <- read.csv("acorn.csv",header=T)
@@ -56,6 +57,7 @@ According to the power analysis plot, we need at least group size 9, which means
 
 ### II. Comparing Suppliers: Revenue aside, which of the three schools produces the higher quality ornithopters, or do they all produce about the same quality?
 H0:All three schools produce about the same quality
+
 H1:Three schools do not produce about the same quality
 ```{r}
 D2 <- matrix(c(12,23,89,8,12,62,21,30,119),ncol=3,nrow = 3,byrow=TRUE)
